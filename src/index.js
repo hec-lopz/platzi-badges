@@ -1,7 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-const container = document.getElementById('app');
+import "bootstrap/dist/css/bootstrap.css";
 
-const element = <h1>Hello, Platzi Badges</h1>;
-ReactDOM.render(element, container);
+import "./global.css";
+// import Badge from "./components/Badge";
+// import BadgeNew from "./pages/BadgeNew";
+import Badges from "./pages/Badges";
+
+const container = document.getElementById("app");
+
+// ReactDOM.render(__que__, __donde__);
+// ReactDOM.render(
+//   <BadgeNew
+//     // firstName="Lilly"
+//     // lastName="Kaufman"
+//     // avatarUrl="https://www.gravatar.com/avatar?d=identicon"
+//     // jobTitle="Frontend Engineer"
+//     // twitter="sparragus"
+//   />,
+//   container
+// );
+
+ReactDOM.render(<Badges />, container);
