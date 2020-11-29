@@ -1,0 +1,27 @@
+.Home {
+  background: url("../../images/stars.svg"), #1b1b25;
+  height: calc(100vh - 60px);
+  display: grid;
+  /* flex: 1 1 auto; */
+  place-items: center;
+}
+.Home__container {
+  display: flex;
+  align-items: center;
+}
+.Home__description {
+  color: white;
+  margin-right: 5rem;
+  font-size: 1.15rem;
+}
+.Home__title {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.Home__confLogo {
+  margin-bottom: 2rem;
+}
+
+.Home__btn {
+  align-self: center;
+}
