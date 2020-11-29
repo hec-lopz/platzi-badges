@@ -1,4 +1,5 @@
 import React from "react";
+import Skeleton from "react-loading-skeleton";
 
 import "./styles/Badge.css";
 import confLogo from "../images/badge-header.svg";
