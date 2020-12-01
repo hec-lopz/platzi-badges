@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import api from "../api";
 import BadgesList from "../components/BadgesList";
-// import PageLoading from "../components/PageLoading";
 import PageError from "../components/PageError";
 import "./styles/Badges.css";
 import confLogo from "../images/platziconf-logo.svg";
 import { Link } from "react-router-dom";
+import PageLoading from "../components/PageLoading";
 
 class Badges extends Component {
   state = {
@@ -28,9 +28,9 @@ class Badges extends Component {
   };
 
   render() {
-    if (this.state.loading === true) {
-      // return <BadgesList badges={{ data: {} }} />;
-    }
+    // if (this.state.loading === true) {
+    //   return <PageLoading />;
+    // }
     if (this.state.error) {
       return <PageError error={this.state.error} />;
     }
@@ -53,7 +53,11 @@ class Badges extends Component {
               New Badge
             </Link>
           </div>
-          <BadgesList badges={this.state.data} />
+          {this.state.loading === false ? (
+            <BadgesList badges={this.state.data} />
+          ) : (
+            <PageLoading />
+          )}
         </div>
       </React.Fragment>
     );

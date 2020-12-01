@@ -1,0 +1,17 @@
+.BadgeSkeleton {
+  background: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.BadgeSkeleton__text-container > p {
+  margin: 0.1rem;
+  /* width: 100%; */
+}
+.BadgeSkeleton__text-container {
+  width: 100%;
+}

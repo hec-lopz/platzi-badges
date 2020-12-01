@@ -1,10 +1,15 @@
 import React from "react";
 import "./styles/PageLoading.css";
-// import Loader from "./Loader";
-import Skeleton from "react-loading-skeleton";
+import BadgeSkeleton from "./BadgeSkeleton";
 
 const PageLoading = () => {
-  return <Skeleton />;
+  return (
+    <div>
+      {new Array(10).fill(1).map((_, i) => (
+        <BadgeSkeleton key={i} />
+      ))}
+    </div>
+  );
 };
 
 export default PageLoading;
