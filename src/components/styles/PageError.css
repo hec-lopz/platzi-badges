@@ -3,6 +3,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   width: 100%;
+}
+
+.PageError__container {
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+  /* height: 380px; */
+  width: 60%;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.PageError__header {
+  padding: 0.5rem 0;
+  height: 80px;
+  background: #1b1b25;
+  display: flex;
+  justify-content: center;
+}
+.PageError__emoji {
+  width: 70%;
+  /* margin-top: 10px; */
+}
+.PageError__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.PageError__error {
+  margin: 0;
+  margin-top: 20px;
+}
+.PageError__message {
+  font-size: 24px;
+  margin-bottom: 1.5rem;
 }
