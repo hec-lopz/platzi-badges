@@ -15,6 +15,7 @@
   /* height: 380px; */
   width: 60%;
   min-width: 300px;
+  max-width: 980px;
   box-sizing: border-box;
 }
 
@@ -26,7 +27,7 @@
   justify-content: center;
 }
 .PageError__emoji {
-  width: 70%;
+  width: 50%;
   /* margin-top: 10px; */
 }
 .PageError__description {
