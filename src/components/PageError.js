@@ -17,7 +17,7 @@ const PageError = (props) => {
             <img className="PageError__emoji" src={emoji} alt="" srcset="" />
             <hr />
             <p className="PageError__message font-weight-bold">
-              ¡Algo ocurrió! Estamos trabajando para solucionarlo.
+              ¡Something happened! We are working to fix this.
             </p>
           </div>
         </div>
