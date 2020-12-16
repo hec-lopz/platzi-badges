@@ -4,6 +4,29 @@ import "./styles/BadgesList.css";
 import { FaTwitter } from "react-icons/fa";
 import Gravatar from "./Gravatar";
 
+class BadgesListItem extends Component {
+  render() {
+    return (
+      <li className="BadgesListItem" key={this.props.badge.id}>
+        <Gravatar
+          className="BadgesListItem__avatar"
+          email={this.props.badge.email}
+        />
+        <div className="BadgeListItem__text-container">
+          <p className="font-weight-bold">
+            {this.props.badge.firstName} {this.props.badge.lastName}
+          </p>
+          <p className="BadgeListItem__twitter">
+            <FaTwitter className="BadgeListItem__twitter-icon" />
+            {this.props.badge.twitter}
+          </p>
+          <p className="BadgeListItem__jobTitle">{this.props.badge.jobTitle}</p>
+        </div>
+      </li>
+    );
+  }
+}
+
 class BadgesList extends Component {
   render() {
     if (this.props.badges.length === 0) {
@@ -18,25 +41,14 @@ class BadgesList extends Component {
     }
     return (
       <ul className="list-unstyled BadgesList">
-        {this.props.badges.map((badge) => {
+        {this.props.badges.reverse().map((badge) => {
           return (
-            <li className="BadgesListItem" key={badge.id}>
-              <Gravatar
-                className="BadgesListItem__avatar"
-                email={badge.email}
-                alt=""
-              />
-              <div className="BadgeListItem__text-container">
-                <p className="font-weight-bold">
-                  {badge.firstName} {badge.lastName}
-                </p>
-                <p className="BadgeListItem__twitter">
-                  <FaTwitter className="BadgeListItem__twitter-icon" />
-                  {badge.twitter}
-                </p>
-                <p className="BadgeListItem__jobTitle">{badge.jobTitle}</p>
-              </div>
-            </li>
+            <Link
+              className="text-reset text-decoration-none"
+              to={`/badges/${badge.id}/edit`}
+            >
+              <BadgesListItem badge={badge} />
+            </Link>
           );
         })}
       </ul>

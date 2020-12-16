@@ -448,6 +448,30 @@
       "jobTitle": "Desarrollador",
       "twitter": "hec_lopz",
       "id": "n96sdrN"
+    },
+    {
+      "firstName": "Patricio",
+      "lastName": "Estrella",
+      "email": "Patrick_star@hotmail.com",
+      "jobTitle": "Vivir bajo piedra",
+      "twitter": "patstar",
+      "id": "weqrD3Q"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Esponja",
+      "email": "spongebob@me.dev",
+      "jobTitle": "Developer",
+      "twitter": "sqpants",
+      "id": "uAqlFXt"
+    },
+    {
+      "firstName": "Panchita",
+      "lastName": "Texas",
+      "email": "lovtexas@arenita.me",
+      "jobTitle": "Cientifico",
+      "twitter": "sandy",
+      "id": "cjtA1ee"
     }
   ]
 }

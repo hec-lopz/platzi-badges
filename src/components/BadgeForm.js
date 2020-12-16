@@ -23,7 +23,6 @@ class BadgeForm extends Component {
   render() {
     return (
       <div>
-        <h1>New Attendant</h1>
         <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
@@ -82,6 +81,10 @@ class BadgeForm extends Component {
           >
             Save
           </button>
+
+          {this.props.error && (
+            <p className="text-danger">{this.props.error.message}</p>
+          )}
         </form>
       </div>
     );

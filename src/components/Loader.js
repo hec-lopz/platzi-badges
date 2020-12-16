@@ -4,7 +4,7 @@ import "./styles/Loader.css";
 export default class Loader extends Component {
   render() {
     return (
-      <div className="lds-grid">
+      <div className={`lds-grid ${this.props.className}`}>
         <div />
         <div />
         <div />
