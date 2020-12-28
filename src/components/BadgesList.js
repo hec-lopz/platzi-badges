@@ -46,7 +46,7 @@ class BadgesList extends Component {
             <Link
               key={badge.id}
               className="text-reset text-decoration-none"
-              to={`/badges/${badge.id}/edit`}
+              to={`/badges/${badge.id}`}
             >
               <BadgesListItem badge={badge} />
             </Link>
