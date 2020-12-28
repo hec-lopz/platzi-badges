@@ -14,7 +14,7 @@ class PageLoading extends Component {
     } else {
       return (
         <div>
-          {new Array(10).fill(1).map((_, i) => (
+          {new Array(this.props.numberOfItems).fill(1).map((_, i) => (
             <BadgeSkeleton key={i} />
           ))}
         </div>

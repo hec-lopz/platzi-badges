@@ -41,9 +41,10 @@ class BadgesList extends Component {
     }
     return (
       <ul className="list-unstyled BadgesList">
-        {this.props.badges.reverse().map((badge) => {
+        {this.props.badges.map((badge) => {
           return (
             <Link
+              key={badge.id}
               className="text-reset text-decoration-none"
               to={`/badges/${badge.id}/edit`}
             >

@@ -11,10 +11,14 @@ class Badges extends Component {
   state = {
     loading: true,
     error: null,
-    data: [],
+    data: undefined,
   };
   componentDidMount() {
     this.fetchData();
+    this.intervalId = setInterval(this.fetchData, 5000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
   }
   fetchData = async () => {
     this.setState({ loading: true, error: null });
@@ -53,11 +57,12 @@ class Badges extends Component {
               New Badge
             </Link>
           </div>
-          {this.state.loading === false ? (
-            <BadgesList badges={this.state.data} />
+          {this.state.loading === true && !this.state.data ? (
+            <PageLoading numberOfItems={10} />
           ) : (
-            <PageLoading />
+            <BadgesList badges={this.state.data} />
           )}
+          {this.state.loading === true && <PageLoading numberOfItems={1} />}
         </div>
       </React.Fragment>
     );
