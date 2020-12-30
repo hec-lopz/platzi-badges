@@ -1,6 +1,7 @@
 import React from "react";
 import header from "../images/platziconf-logo.svg";
 import Badge from "../components/Badge";
+import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
 
 const BadgeDetails = (props) => {
@@ -39,13 +40,14 @@ const BadgeDetails = (props) => {
               <div>
                 <Link
                   className="btn btn-primary mb-4"
-                  to={`/badge/${badge.id}/edit`}
+                  to={`/badges/${badge.id}/edit`}
                 >
                   Edit
                 </Link>
               </div>
               <div>
                 <button className="btn btn-danger">Delete</button>
+                <Modal isOpen={props.modalIsOpen} />
               </div>
             </div>
           </div>
