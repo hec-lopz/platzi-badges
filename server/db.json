@@ -1,15 +1,6 @@
 {
   "badges": [
     {
-      "id": "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-      "firstName": "Freda",
-      "lastName": "Grady",
-      "email": "Leann_Berge@gmail.com",
-      "jobTitle": "Legacy Brand Director",
-      "twitter": "FredaGrady22221-7573",
-      "avatarUrl": "https://www.gravatar.com/avatar/f63a9c45aca0e7e7de0782a6b1dff40b?d=identicon"
-    },
-    {
       "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
       "firstName": "Major",
       "lastName": "Rodriguez",
@@ -448,22 +439,6 @@
       "jobTitle": "Desarrollador",
       "twitter": "hec_lopz",
       "id": "n96sdrN"
-    },
-    {
-      "firstName": "Patricio",
-      "lastName": "Estrella",
-      "email": "Patrick_star@hotmail.com",
-      "jobTitle": "Vivir bajo piedra",
-      "twitter": "patrickstar",
-      "id": "weqrD3Q"
-    },
-    {
-      "firstName": "Bob",
-      "lastName": "Esponja",
-      "email": "spongebob@me.dev",
-      "jobTitle": "Developer",
-      "twitter": "sqpants",
-      "id": "uAqlFXt"
     },
     {
       "firstName": "Panchita",
