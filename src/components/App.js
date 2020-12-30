@@ -6,7 +6,7 @@ import BadgeEdit from "../pages/BadgeEdit";
 import Layout from "./Layout";
 import NotFound from "./NotFound";
 import Home from "../pages/Home";
-import BadgeDetails from "../pages/BadgeDetails";
+import BadgeDetails from "../pages/BadgeDetailsContainer";
 
 const App = () => {
   return (
